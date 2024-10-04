@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+
+    <title>Atividade Forms</title>
+</head>
+<body>
+
+    <div class="nav">
+
+        <span class="navtitle">
+            fefe: att client side
+        </span>
+
+        <a href="https://github.com/fe-fe/web1-attclientside/" target="_blank">
+            <button class="navbt">
+                GitHub
+            </button>
+        </a>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <span>Cadastro</span>
+        </div>
+        <div class="box">
+            <div class="minibox p2">
+                <form id="form">
+                    <div class="field">
+                        <label for="username">Apelido:</label><br>
+                        <input autocomplete="off" id="username" type="text" placeholder="ex: fefe">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label><br>
+                        <input autocomplete="off"  id="email" type="email" placeholder="seu email aqui...">
+                    </div>
+                    <div class="field">
+                        <label for="pw">Senha:</label><br>
+                        <input autocomplete="off"  id="pw" type="password" placeholder="sua senha aqui...">
+                    </div>
+                    <div class="flex jusc">
+                        <button form="form" type="submit" class="enviar">enviar</button>
+                    </div>
+                </form>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
