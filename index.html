@@ -3,55 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="base.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles/styles.css">
+    <link rel="stylesheet" href="/css/themes/sky-theme.css">
+    <link rel="stylesheet" href="/css/themes/cherry-bg.css">
 
-    <title>Atividade Forms</title>
 </head>
 <body>
-
-    <div class="nav">
-
-        <span class="navtitle">
-            fefe
-        </span>
-
-        <a href="https://github.com/fe-fe/web1-attclientside/" target="_blank">
-            <button class="navbt">
-                GitHub
-            </button>
-        </a>
+    <div class="navbar">
+        <span class="title">fariafu</span>
+        <div class="navlinks">
+            <a href="https://github.com/fe-fe/fariafu" target="_blank">
+                <button>GitHub</button>
+            </a>
+        </div>
     </div>
-
+    <div class="navfooter"></div>
     <div class="content">
-        <div class="header">
-            <span>Cadastro</span>
-        </div>
-        <div class="box">
-            <div class="minibox p2">
-                <form id="form">
-                    <div class="field">
-                        <label for="username">Apelido:</label><br>
-                        <input autocomplete="off" id="username" type="text" placeholder="ex: fefe">
+        <div class="box p2 fade2 flex gap1">
+            <div class="minibox p2 pbl1">
+                <form id="form" class="basic">
+                    <div class="title-row">
+                        <span class="title">Cadastro</span>
                     </div>
-                    <div class="field">
-                        <label for="email">Email:</label><br>
-                        <input autocomplete="off"  id="email" type="email" placeholder="seu email aqui...">
+                    <hr class="separator">
+                    <div class="flexc gap1">
+                        <div class="form-group">
+                            <label for="username" class="f-medium">Usuário</label>
+                            <input id="username" type="text" class="f-medium basic" placeholder="insira aqui...">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="f-medium">E-mail</label>
+                            <input id="email" type="email" class="f-medium basic" placeholder="insira aqui...">
+                        </div>
+                        <div class="form-group">
+                            <label for="pw" class="f-medium">Senha</label>
+                            <input id="pw" type="password" class="f-medium basic" placeholder="insira aqui...">
+                        </div>
+                        <div class="flexc alc jusc gap05">
+                            <button type="submit" class="fade1 f-medium pi2">cadastrar</button>
+                            <a>
+                                <span id="login" class="link f-small">Já tenho uma conta</span>
+                            </a>
+                        </div>
+                        
                     </div>
-                    <div class="field">
-                        <label for="pw">Senha:</label><br>
-                        <input autocomplete="off"  id="pw" type="password" placeholder="sua senha aqui...">
-                    </div>
-                    <div class="flex jusc">
-                        <button form="form" type="submit" class="enviar">enviar</button>
-                    </div>
+
+                    
                 </form>
-                
             </div>
-            
+            </div>
         </div>
     </div>
-
-    
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
